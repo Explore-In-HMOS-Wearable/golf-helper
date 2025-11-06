@@ -1,0 +1,40 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "module description"
+    },
+    {
+      "name": "EntryAbility_desc",
+      "value": "description"
+    },
+    {
+      "name": "EntryAbility_label",
+      "value": "label"
+    },
+    {
+      "name": "mapButton",
+      "value": "Live Map"
+    },
+    {
+      "name": "hole",
+      "value": "Hole: %s"
+    },
+    {
+      "name": "goBack",
+      "value": "Go Back"
+    },
+    {
+      "name": "HuaweiGolfApp",
+      "value":"Huawei Golf Club"
+    },
+    {
+      "name": "Trails",
+      "value":"Trails"
+    },
+    {
+      "name": "distance",
+      "value":"Distance: %s m"
+    }
+  ]
+}
