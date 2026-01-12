@@ -1,8 +1,10 @@
 import { abilityAccessCtrl, bundleManager, common, PermissionRequestResult, Permissions } from '@kit.AbilityKit';
 import { BusinessError } from '@kit.BasicServicesKit';
 import { hilog } from '@kit.PerformanceAnalysisKit';
+import { GlobalContext } from '../entryability/EntryAbility';
 
 const domain = 0x0000;
+const context = GlobalContext.abilityContext;
 
 class PermissionsUtil {
   private static instance: PermissionsUtil;
@@ -59,7 +61,7 @@ class PermissionsUtil {
 
   requestPermissions(permissions: Array<Permissions>): void {
     const atManager = abilityAccessCtrl.createAtManager();
-    atManager.requestPermissionsFromUser(getContext() as common.UIAbilityContext, permissions)
+    atManager.requestPermissionsFromUser(context as common.UIAbilityContext, permissions)
       .then((_data: PermissionRequestResult) => {
         hilog.info(domain, 'PermissionsUtil', 'Request permissions success');
       })

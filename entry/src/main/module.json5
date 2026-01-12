@@ -6,7 +6,6 @@
     "mainElement": "EntryAbility",
     "routerMap": "$profile:router_map",
     "deviceTypes": [
-      "phone",
       "wearable"
     ],
     "deliveryWithInstall": true,

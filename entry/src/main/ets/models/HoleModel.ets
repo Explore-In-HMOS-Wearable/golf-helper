@@ -1,4 +1,4 @@
-import { mapCommon } from "@kit.MapKit"
+import { mapCommon } from '@kit.MapKit'
 
 export interface HoleModel {
   holeName: string
@@ -17,7 +17,7 @@ export const mockHoleData: HoleModel[] = [
     holeName: 'Hole 1',
     par: 3,
     desc: 'The hole sloping gently from east to west.The green measures 23 by 17 meters (391 m²). With the right iron and wind consideration, reaching the green from the tee is quite achievable—setting you up for a confident start.',
-    img: $r("app.media.cukur1"),
+    img: $r('app.media.cukur1'),
     lat:'38.316249',
     lan:'26.718988',
     mapFrame: [
@@ -39,7 +39,7 @@ export const mockHoleData: HoleModel[] = [
     holeName: 'Hole 2',
     par: 3,
     desc: 'This hole runs parallel to the first and rises from west to east. Olive trees line the right side, with pine and olive trees near the green. The green is elevated and visible from the tee but quite narrow, with an out-of-bounds area behind it, making club selection crucial. A pleasant uphill walk rewards you with a beautiful view from the green.',
-    img: $r("app.media.cukur2"),
+    img: $r('app.media.cukur2'),
     lat:'38.316249',
     lan:'26.718988',
     mapFrame: [
@@ -61,7 +61,7 @@ export const mockHoleData: HoleModel[] = [
     holeName: 'Hole 3',
     par: 3,
     desc: 'A gentle downhill hole with a wide fairway and a bunker protecting the left side of the green. The green is slightly sloped and requires a precise approach. A smooth start for players who enjoy controlled shots.',
-    img: $r("app.media.cukur3"),
+    img: $r('app.media.cukur3'),
     lat:'38.316249',
     lan:'26.718988',
     mapFrame: [
@@ -84,7 +84,7 @@ export const mockHoleData: HoleModel[] = [
     holeName: 'Hole 4',
     par: 4,
     desc: 'A long fairway stretches ahead, narrowing near the green. A stream guards the front, while the back offers a safe landing area. Choose your club wisely to avoid the water and aim for an easy two-putt finish.',
-    img: $r("app.media.cukur4"),
+    img: $r('app.media.cukur4'),
     lat: '38.316249',
     lan: '26.718988',
     mapFrame: [
@@ -101,13 +101,13 @@ export const mockHoleData: HoleModel[] = [
       { latitude: 38.316593, longitude: 26.720862 }
     ],
     holeLat: { latitude: 38.316636, longitude: 26.718840 },
-    startLat: { latitude: 38.317219, longitude: 26.721360 },
+    startLat: { latitude: 38.317219, longitude: 26.721360 }
   },
   {
     holeName: 'Hole 5',
     par: 3,
     desc: 'This short par 3 plays slightly uphill, with trees framing both sides. The green is wide but shallow, demanding accurate distance control. A rewarding hole for those who trust their irons.',
-    img: $r("app.media.cukur5"),
+    img: $r('app.media.cukur5'),
     lat:'38.316249',
     lan:'26.718988',
     mapFrame: [
@@ -122,13 +122,13 @@ export const mockHoleData: HoleModel[] = [
       { latitude: 38.316768, longitude: 26.718320 }
     ],
     holeLat: {latitude:38.315958, longitude:26.718349 },
-    startLat: { latitude: 38.316750, longitude: 26.718229 },
+    startLat: { latitude: 38.316750, longitude: 26.718229 }
   },
   {
     holeName: 'Hole 6',
     par: 3,
     desc: 'A downhill hole with a clear view of the flag. Bunkers on both sides challenge your accuracy, while the breeze can affect your shot. A scenic and enjoyable hole that tests both skill and focus.',
-    img: $r("app.media.cukur6"),
+    img: $r('app.media.cukur6'),
     lat:'38.316249',
     lan:'26.718988',
     mapFrame: [
@@ -146,7 +146,7 @@ export const mockHoleData: HoleModel[] = [
       { latitude: 38.315650, longitude: 26.718320 }
     ],
     holeLat: {latitude:38.315567, longitude:26.720119 },
-    startLat: { latitude: 38.315368, longitude: 26.718371 },
-  },
+    startLat: { latitude: 38.315368, longitude: 26.718371 }
+  }
 
 ]

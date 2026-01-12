@@ -6,12 +6,12 @@ A modern golf assistant that helps you navigate the course with ease. See hole l
 
 # Preview
 
-<p align="left">
+<div>
     <img src="screenshots/ss4.png" width="24%" />
     <img src="screenshots/ss3.png" width="24%" />
     <img src="screenshots/ss2.png" width="24%" />
     <img src="screenshots/ss1.png" width="24%" />
-</p>
+</div>
 
 
 # Use Cases
@@ -19,12 +19,10 @@ A modern golf assistant that helps you navigate the course with ease. See hole l
 - The user measures the distance between their current location and any point on the course (e.g., to the green or hazard).
 - The app uses the compass to help the user align shots accurately with the target direction.
 
-# Technology 
-## Stack 
-
+# Tech Stack
 **Languages**: ArkTS, ArkUI  
-**Frameworks**: HarmonyOS SDK 5.1.0  
-**Tools**: DevEco Studio Version 5.1.0.828
+**Frameworks**: HarmonyOS SDK 6.0.0(20)  
+**Tools**: DevEco Studio 6.0.0 beta5
 **Libraries/Kits**:
 - @kit.ArkUI
 - @kit.MapKit
@@ -32,14 +30,9 @@ A modern golf assistant that helps you navigate the course with ease. See hole l
 - @kit.LocationKit
 - @kit.SensorServiceKit
 
-## Required Permissions
-
-- `ohos.permission.LOCATION` – for accessing precise location data.
-- `ohos.permission.APPROXIMATELY_LOCATION` – for accessing approximate location information when precise location is not needed.
 
 
 # Directory Structure
-
 ```
 ├───ets
 │   ├───components
@@ -82,13 +75,21 @@ A modern golf assistant that helps you navigate the course with ease. See hole l
 
 ```
 
+
 # Constraints and Restrictions
+- The application requires the following user permissions to function properly:
 
+  - ohos.permission.LOCATION – for accessing precise location data.
+
+   - ohos.permission.APPROXIMATELY_LOCATION – for accessing approximate location information when precise location is not needed.
+
+- For devices such as smartwatches, the Accelerometer sensor must be available and enabled if the user wishes to use the Compass feature.
+
+- Without the necessary permissions or sensor access, certain features—such as location-based functionalities and compass orientation—may not operate correctly.
 ## Supported Device
-
-* Huawei Watch 5
+- Huawei Watch 5
 
 # License
 
 **Golf Helper** is distributed under the terms of the **MIT License**.  
-See the [LICENSE](LICENSE) file for more information.  
+See the [LICENSE](LICENSE) for more information.  

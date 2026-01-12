@@ -2,12 +2,12 @@ import { TrailListComponent } from '../components/TrailListComponent';
 import { ArcButton, ArcButtonOptions, ArcButtonPosition, ArcButtonStyleMode,
   ArcList,
   LengthMetrics,
-  ArcListItem, ArcListAttribute, ArcListItemAttribute,} from '@kit.ArkUI';
+  ArcListItem, ArcListAttribute, ArcListItemAttribute} from '@kit.ArkUI';
 import { HoleModel, mockHoleData } from '../models/HoleModel';
 
 
 @Builder
-function TrailListBuilder() {
+function trailListBuilder() {
   TrailList()
 }
 
@@ -36,7 +36,7 @@ struct TrailList {
             TrailListComponent({ item: it }).onClick(()=>{
               this.pathStack.pushPath({ name:'HoleDetail', param:it })
             })
-          })
+          }, (item: HoleModel) => item.holeName.toString())
         }
         .width('100%')
         .height('100%')

@@ -1,35 +1,35 @@
 {
   "routerMap": [
     {
-        "name": "Index",
+      "name": "Index",
       "pageSourceFile": "src/main/ets/pages/Index.ets",
-      "buildFunction": "IndexBuilder",
+      "buildFunction": "indexBuilder",
       "data": {
-        "description": "this is MainScreen"
+        "description": "The main landing screen and entry point of the application."
       }
     },
     {
       "name": "Trails",
       "pageSourceFile": "src/main/ets/pages/TrailList.ets",
-      "buildFunction": "TrailListBuilder",
+      "buildFunction": "trailListBuilder",
       "data": {
-        "description": "this is add appointment page"
+        "description": "Displays a comprehensive list of available trails."
       }
     },
     {
       "name": "HoleDetail",
       "pageSourceFile": "src/main/ets/pages/HoleDetail.ets",
-      "buildFunction": "HoleDetailBuilder",
+      "buildFunction": "holeDetailBuilder",
       "data": {
-        "description": "this is add appointment page"
+        "description": "Provides detailed information and statistics for a specific hole."
       }
     },
     {
       "name": "MapPage",
       "pageSourceFile": "src/main/ets/pages/MapPage.ets",
-      "buildFunction": "MapPageBuilder",
+      "buildFunction": "mapPageBuilder",
       "data": {
-        "description": "this is add appointment page"
+        "description": "Interactive map view for navigation and location tracking."
       }
     }
   ]

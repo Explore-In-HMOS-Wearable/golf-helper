@@ -1,7 +1,7 @@
 import { ArcButton, ArcButtonOptions, ArcButtonPosition, ArcButtonStyleMode } from '@kit.ArkUI';
 
 @Builder
-function IndexBuilder() {
+function indexBuilder() {
   Index()
 }
 

@@ -7,7 +7,7 @@ import { geoLocationManager } from '@kit.LocationKit';
 import { sensor } from '@kit.SensorServiceKit';
 
 @Builder
-function MapPageBuilder() {
+function mapPageBuilder() {
   MapPage()
 }
 
@@ -15,7 +15,7 @@ function MapPageBuilder() {
 @Component
 struct MapPage {
   pathStack: NavPathStack | undefined = undefined;
-  private TAG = "HuaweiMapDemo";
+  private TAG = 'HuaweiMapDemo';
   private mapOptions?: mapCommon.MapOptions;
   private callback?: AsyncCallback<map.MapComponentController>;
   private mapController?: map.MapComponentController;
@@ -35,16 +35,15 @@ struct MapPage {
       'ohos.permission.LOCATION',
       'ohos.permission.APPROXIMATELY_LOCATION',])
 
-    // Subscribe to compass (rotation vector)
     sensor.on(sensor.SensorId.ROTATION_VECTOR, (data: sensor.RotationVectorResponse) => {
-      console.info('Succeeded in invoking on. X-coordinate component: ' + data.x);
+      console.info(`Succeeded in invoking on. X-coordinate component: ${data.x}`);
       const x = data.x;
       const y = data.y;
       const z = data.z;
       const w = data.w;
-      const siny_cosp = 2 * (w * z + x * y)
-      const cosy_cosp = 1 - 2 * (y * y + z * z)
-      const azimuthRad = Math.atan2(siny_cosp, cosy_cosp)
+      const sinyCosp = 2 * (w * z + x * y)
+      const cosyCosp = 1 - 2 * (y * y + z * z)
+      const azimuthRad = Math.atan2(sinyCosp, cosyCosp)
       const azimuthDeg = (azimuthRad * 180 / Math.PI + 360) % 360
       this.azimuth = Math.round(azimuthDeg)
     }, { interval: 100_000_000 }) // every 100ms
@@ -70,7 +69,7 @@ struct MapPage {
         }
 
         // When the map is loaded, draw the polygon
-        this.mapEventManager.on("mapLoad", async () => {
+        this.mapEventManager.on('mapLoad', async () => {
           console.info(this.TAG, `on-mapLoad`);
           await this.addPolygonOnMap();
         });
@@ -81,7 +80,9 @@ struct MapPage {
   }
 
   async addPolygonOnMap() {
-    if (!this.mapController) return;
+    if (!this.mapController){
+      return
+    };
 
     // Explicitly type the array
     const polygonPoints: mapCommon.LatLng[] = this.pageParam?.mapFrame!

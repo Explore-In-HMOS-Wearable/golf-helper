@@ -2,7 +2,7 @@ import { HoleModel } from '../models/HoleModel';
 import { ArcButton, ArcButtonOptions, ArcButtonPosition, ArcButtonStyleMode } from '@kit.ArkUI';
 
 @Builder
-function HoleDetailBuilder() {
+function holeDetailBuilder() {
   HoleDetail()
 }
 
